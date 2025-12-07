@@ -17,7 +17,7 @@ const serverUrlResolvers = {
     2: (p) => p.type === 'movie' ? `https://moviesapi.club/movie/${p.id}` : `https://moviesapi.club/tv/${p.id}-${p.season}-${p.episode}`,
     3: (p) => p.type === 'movie' ? `https://vidsrc.me/embed/movie?tmdb=${p.id}` : `https://vidsrc.me/embed/tv?tmdb=${p.id}&season=${p.season}&episode=${p.episode}`,
     4: (p) => p.type === 'movie' ? `https://player.videasy.net/movie/${p.id}` : `https://player.videasy.net/tv/${p.id}/${p.season}/${p.episode}?nextEpisode=true&episodeSelector=true`,
-    5: (p) => p.type === 'movie' ? `https://vidsrc.su/embed/movie/${p.id}` : `https://vidsrc.su/embed/tv/${p.id}/${p.season}/${p.episode}`,
+    5: (p) => p.type === 'movie' ? `https://vidfast.pro/movie/${p.id}` : `https://vidfast.pro/tv/${p.id}/${p.season}/${p.episode}`,
     6: (p) => p.type === 'movie' ? `https://vidlink.pro/movie/${p.id}?title=true&poster=true&autoplay=false` : `https://vidlink.pro/tv/${p.id}/${p.season}/${p.episode}?title=true&poster=true&autoplay=false&nextbutton=true`
 };
 function getServerURL(serverNumber, params) {
